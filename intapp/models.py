@@ -114,6 +114,7 @@ class Product(models.Model):
     discount_price = models.FloatField(default=0)
     condition = models.CharField(max_length=7, choices=CONDITIONS, default='Good')
     type = models.CharField(max_length=10, choices=TYPES, default='Family')
+    is_stock = models.BooleanField(default=True)
 
     class Meta:
         ordering = ('-id',)
