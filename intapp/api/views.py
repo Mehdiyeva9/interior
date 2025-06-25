@@ -16,6 +16,7 @@ class ProductListAPIView(ListAPIView):
 class ProductRetrieveAPIView(RetrieveAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductRetrieveSerializer
+    lookup_field = ('id')
 
 class UserCreateAPIView(CreateAPIView):
     queryset = CustomUser.objects.all()

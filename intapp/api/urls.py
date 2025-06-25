@@ -8,7 +8,7 @@ urlpatterns = [
     path('user-wishlist/',views.UserWishlistListAPIView.as_view()),
     path('wishlist/',views.WishlistListAPIView.as_view()),
     path('product-list/', views.ProductListAPIView.as_view()),
-    path('product-retrieve/', views.ProductRetrieveAPIView.as_view()),
+    path('product-retrieve/<id>/', views.ProductRetrieveAPIView.as_view()),
     path('review-list/',views.ReviewListAPIView.as_view()),
     path('settings-list/', views.SiteSettingsListAPIView.as_view()),
     path('savelist-create/', views.SavelistCreateAPIView.as_view()),
